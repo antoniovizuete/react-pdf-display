@@ -17,11 +17,12 @@ export default defineConfig({
       fileName: format => `react-pdf-display.${format}.js`,
     },
     rollupOptions: {
-      external: ['react', 'react-dom'],
+      external: ['react', 'react-dom', 'pdfjs-dist'],
       output: {
         globals: {
           react: 'React',
           'react-dom': 'ReactDOM',
+          'pdfjs-dist': 'pdfjsLib',
         }
       }
     }
