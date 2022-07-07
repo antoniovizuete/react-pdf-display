@@ -1,6 +1,6 @@
 {
   "name": "react-pdf-display",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "React PDF display component",
   "repository": "git@github.com:antoniovizuete/react-pdf-display.git",
   "author": "Antonio Vizuete <antoniovizuete@gmail.com>",
@@ -11,22 +11,8 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "prepack": "json -f package.json -I -e \"delete this.devDependencies; delete this.dependencies\"",
-    "preview": "vite preview"
-  },
-  "dependencies": {
-    "pdfjs-dist": "^2.14.305",
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0"
-  },
-  "devDependencies": {
-    "@types/react": "^18.0.0",
-    "@types/react-dom": "^18.0.0",
-    "@vitejs/plugin-react": "^1.3.0",
-    "json": "^11.0.0",
-    "tslib": "^2.4.0",
-    "typescript": "^4.6.3",
-    "vite": "^2.9.9",
-    "vite-plugin-dts": "^1.2.1"
+    "preview": "vite preview",
+    "release": "yarn build && yarn publish"
   },
   "peerDependencies": {
     "react": "^16.8.0 || 17.x || 18.x",
